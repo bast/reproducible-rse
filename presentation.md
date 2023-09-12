@@ -519,7 +519,35 @@ Kitchen analogy
 
 ## Reproducible notebooks
 
-(work in progress)
+.left-column60[
+```python
+import matplotlib.pyplot as plt
+
+from sklearn import datasets, metrics, svm
+
+# ... rest of the notebook ...
+```
+
+- `environment.yml` and `requirements.txt` are two standard ways to describe a Python environment
+]
+
+.right-column30[
+environment.yml
+```yml
+name: myproject
+channels:
+  - defaults
+dependencies:
+  - matplotlib=3.7.2
+  - scikit-learn=1.3.0
+```
+
+requirements.txt
+```yml
+matplotlib==3.7.2
+scikit-learn==1.3.0
+```
+]
 
 ---
 
