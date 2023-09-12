@@ -559,18 +559,33 @@ Singularity), [podman](https://podman.io/)
 
 ---
 
-## Recording computational steps
+class: middle, inverse
+
+# Moving to the cloud or basement
+
+# &#9729;&#65039; &#9968;&#65039;
+
+---
+
+## Toolbox
 
 .left-column60[
-We need a way to record and .emph[communicate] computational steps
+### Profiling
 
-- **README** (steps written out "in words")
+- [PyTorch profiler](https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html)
+- [DLProf (NVIDIA)](https://docs.nvidia.com/deeplearning/frameworks/dlprof-user-guide/index.html)
 
-- **Scripts** (typically shell scripts)
 
-- **Notebooks** (Jupyter or R Markdown)
+### Porting
 
-- **Workflows** (Snakemake, doit, ...)
+- [HIPIFY](https://github.com/ROCm-Developer-Tools/HIPIFY)
+- [NRIS documentation](https://documentation.sigma2.no/code_development/guides/cuda_translating-tools.html)
+
+
+### Distributing
+
+- [Horovod (UBER)](https://horovod.ai/)
+- [Upscaling AI Training (ENCCS)](https://enccs.github.io/upscaling-ai-training/)
 ]
 
 .right-column40[
@@ -580,32 +595,6 @@ We need a way to record and .emph[communicate] computational steps
 
 .cite[Midjourney, CC-BY-NC 4.0]
 ]
-
----
-
-class: middle, inverse
-
-# Moving to the cloud or basement
-
-# &#9729;&#65039; &#9968;&#65039;
-
----
-
-## Toolbox for profiling
-
-(work in progress)
-
----
-
-## Toolbox for distributing
-
-(work in progress)
-
----
-
-## Toolbox for porting
-
-(work in progress)
 
 ---
 
