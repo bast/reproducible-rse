@@ -269,7 +269,7 @@ $ git commit
 
 ---
 
-## Version control for data
+## Version control for data and models?
 
 (work in progress)
 
@@ -390,6 +390,24 @@ Inspiration and where to find more:
 
 ---
 
+## Notebooks: documentation + code + images + equations
+
+(work in progress)
+
+---
+
+## Collaborating on notebooks
+
+(work in progress)
+
+---
+
+## Sharing notebooks
+
+(work in progress)
+
+---
+
 class: middle, inverse
 
 # Reproducibility and containers
@@ -438,6 +456,12 @@ Kitchen analogy
 - Data <-> ingredients
 - Libraries <-> cooking books/blogs
 ]
+
+---
+
+## Reproducible notebooks
+
+(work in progress)
 
 ---
 
@@ -540,6 +564,14 @@ We need a way to record and .emph[communicate] computational steps
 
 .cite[Midjourney, CC-BY-NC 4.0]
 ]
+
+---
+
+class: middle, inverse
+
+# Moving to the cloud or basement
+
+# &#9729;&#65039; &#9968;&#65039;
 
 ---
 
@@ -687,12 +719,6 @@ date-released: 2021-08-11
 <img src="img/cite-this-repo.png"
      alt="Screenshot of a GitHub repository when clicked on 'Cite this repository'"
      style="width: 100%;" />
-
----
-
-## Sharing notebooks
-
-(work in progress)
 
 ---
 
