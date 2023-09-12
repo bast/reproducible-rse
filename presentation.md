@@ -408,13 +408,35 @@ Inspiration and where to find more:
 
 ## Notebooks: documentation + code + images + equations
 
-(work in progress)
+.left-column50[
+<img src="img/medicean-stars.png"
+     alt="Galileo's drawings of Jupiter and its Medicean Stars from Sidereus Nuncius"
+     style="width: 70%;" />
+
+Galileo's drawings of Jupiter and its Medicean Stars from Sidereus Nuncius
+.cite[University of Oklahoma Libraries (CC-BY)]
+]
+
+.right-column50[
+- [Binary black hole signals in LIGO Event data](https://github.com/losc-tutorial/LOSC_Event_tutorial/blob/master/LOSC_Event_tutorial.ipynb)
+
+- [scikit-learn examples](https://scikit-learn.org/stable/auto_examples/index.html)
+
+- [TensorFlow 2 quickstart](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb)
+]
 
 ---
 
 ## Collaborating on notebooks
 
-(work in progress)
+<img src="img/nbdime.png"
+     alt="Screenshot of a rich diff of Jupyter Notebook files in GitHub pull requests"
+     style="width: 80%;" />
+
+.cite[https://github.blog/changelog/2023-03-01-feature-preview-rich-jupyter-notebook-diffs/]
+
+- [nbdime](https://nbdime.readthedocs.io/) - diffing and merging of Jupyter Notebooks
+- Rich diffs in pull requests are now available in [GitHub preview](https://github.blog/changelog/2023-03-01-feature-preview-rich-jupyter-notebook-diffs/)
 
 ---
 
@@ -747,11 +769,21 @@ date-released: 2021-08-11
 
 ## How to share something that cannot be shared?
 
-(image will be added here)
-
+.left-column50[
 - Share small example data which demonstrates functionality
+
 - This way others can re-run it with batteries included
+
 - Example data can then be replaced with real data
+]
+
+.right-column50[
+<img src="img/brain.png"
+     alt="Lego model of a brain"
+     style="height: 250px;" />
+
+.cite[Midjourney, CC-BY-NC 4.0]
+]
 
 ---
 
