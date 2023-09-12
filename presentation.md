@@ -271,7 +271,23 @@ $ git commit
 
 ## Version control for data and models?
 
-(work in progress)
+Git itself is not ideal to track large data. .emph[Idea: track metadata].
+
+
+### [git-annex](https://git-annex.branchable.com/)
+
+- Open source
+
+
+### [Data Version Control](https://dvc.org/)
+
+- Git for Data & Models, ML Experiments Management
+- Open source but a company behind it
+
+
+### [Git Large File Storage](https://git-lfs.com/)
+
+- Proprietary, by GitHub
 
 ---
 
