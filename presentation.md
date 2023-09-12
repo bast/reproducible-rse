@@ -758,7 +758,11 @@ date-released: 2021-08-11
 
 ## How to share something that cannot be shared?
 
-(work in progress)
+(image will be added here)
+
+- Share small example data which demonstrates functionality
+- This way others can re-run it with batteries included
+- Example data can then be replaced with real data
 
 ---
 
