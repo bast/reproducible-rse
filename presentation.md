@@ -350,7 +350,7 @@ Tutorials covering key functionality.
 
 ---
 
-# When projects grow out of a README
+## When projects grow out of a README
 
 - Write documentation in
   [Markdown (.md)](https://en.wikipedia.org/wiki/Markdown)
@@ -557,7 +557,7 @@ Inspiration and where to find more:
 
 ---
 
-# Why software licenses matter
+## Why software licenses matter
 
 - .emph[You find some great code or data] that you want to reuse for your own
   publication (good for the original author: you will cite them and maybe other
@@ -632,7 +632,7 @@ Inspiration and where to find more:
 
 ---
 
-# How do I add a license to my work?
+## How do I add a license to my work?
 
 - Create a `LICENSE` file or `LICENSES/` folder in your project which will hold
   [license texts](https://reuse.software/faq/#license-templates).
@@ -654,7 +654,7 @@ that allows you to do so):
 
 ---
 
-# Make it persistent and citable
+## Make it persistent and citable
 
 - Add a [CITATION.cff](https://citation-file-format.github.io/) file:
 ```yml
@@ -682,7 +682,7 @@ date-released: 2021-08-11
 
 ---
 
-# Many tools understand CITATION.cff
+## Many tools understand CITATION.cff
 
 <img src="img/cite-this-repo.png"
      alt="Screenshot of a GitHub repository when clicked on 'Cite this repository'"
@@ -690,13 +690,13 @@ date-released: 2021-08-11
 
 ---
 
-# How to share something that cannot be shared?
+## How to share something that cannot be shared?
 
 (work in progress)
 
 ---
 
-# Licensing and AI
+## Licensing and AI
 
 (work in progress)
 
@@ -708,8 +708,8 @@ date-released: 2021-08-11
 
 - Join a [CodeRefinery](https://coderefinery.org/) workshop
 
-- [Research software engineering office hours](https://research-software.uit.no/):
+- UiT [research software engineering office hours](https://research-software.uit.no/):
   Every Wednesday 13:00 - 15:00
 
 - [GPU team at NRIS](https://documentation.sigma2.no/getting_help/support_line.html)
-  can help with porting code to GPU or to a different GPU cluster/vendor
+  can help with porting to GPU or to a different GPU cluster/vendor
