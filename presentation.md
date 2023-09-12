@@ -14,7 +14,7 @@ Text: CC-BY 4.0
 
 ---
 
-# About me
+## About me
 
 .left-column30[
 <img src="img/avatar.jpg" style="width: 80%;"/>
@@ -32,7 +32,7 @@ Text: CC-BY 4.0
 
 ---
 
-# What is "research software"?
+## What is "research software"?
 
 .left-column50[
 - Script to convert data from one format to another
@@ -94,7 +94,7 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 
 ---
 
-# RSE topics for today
+## RSE topics for today
 
 .left-column50[
 - Version control for code and data
@@ -287,7 +287,7 @@ Inspiration and where to find more:
 
 ---
 
-# Checklist
+## Checklist
 
 - .emph[Purpose]
 - Installation instructions
@@ -687,6 +687,12 @@ date-released: 2021-08-11
 <img src="img/cite-this-repo.png"
      alt="Screenshot of a GitHub repository when clicked on 'Cite this repository'"
      style="width: 100%;" />
+
+---
+
+## Sharing notebooks
+
+(work in progress)
 
 ---
 
