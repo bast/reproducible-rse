@@ -68,10 +68,6 @@ class: center, middle, inverse
 
 # to produce research software
 
-We consider **any code, script, notebook, or file, regardless of size**, as
-"research software" if it is needed to generate, visualize, or reproduce
-data/results as part of a publication.
-
 ---
 
 # CodeRefinery
@@ -80,8 +76,8 @@ data/results as part of a publication.
 year](https://coderefinery.org/workshops/upcoming/), online, free,
 live-streamed, recorded, archived asynchronous Q&A in collaborative document
 .left-column50[
-- Version control
-- Collaboration using Git
+- Version control Git
+- Collaboration using GitHub
 - Testing
 - Documentation
 - Notebooks
@@ -106,6 +102,8 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 .left-column50[
 - Version control for code and data
 
+- Documentation
+
 - Notebooks
 
 - Reproducibility and containers
@@ -113,8 +111,6 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 - Moving to the cloud or basement
 
 - Sharing and reusing
-
-- How to share something that cannot be shared
 
 - Help and support
 ]
@@ -276,6 +272,12 @@ $ git commit
 
 ---
 
+## Version control for data
+
+(work in progress)
+
+---
+
 class: middle, inverse
 
 # Documentation
@@ -285,18 +287,6 @@ class: middle, inverse
 Inspiration and where to find more:
 - [Documentation lesson material](https://coderefinery.github.io/documentation/) by [CodeRefinery](https://coderefinery.org/)
 - [Talk material "Documenting code" by S. Wittke](https://github.com/samumantha/documentation_example)
-
----
-
-# Why? &#128151;&#9993;&#65039; to your future self
-
-- You will probably use your code in the future and may forget details.
-
-- You may want others to use your code (almost impossible without documentation).
-
-- You may want others to contribute to the code.
-
-- Time is limited - let the documentation answer FAQs.
 
 ---
 
@@ -317,73 +307,6 @@ Inspiration and where to find more:
 
 See also:
 - [JOSS review checklist](https://joss.readthedocs.io/en/latest/review_checklist.html)
-
----
-
-Not very useful (more commentary than comment):
-```python
-# now we check if temperature is larger than -50
-if temperature > -50:
-    print("ERROR: temperature is too low")
-```
-
-More useful (explaining .emph[why]):
-```python
-# we regard temperatures below -50 degrees as measurement errors
-if temperature > -50:
-    print("ERROR: temperature is too low")
-```
-
-Keeping zombie code "just in case" (rather use version control):
-```python
-# do not run this code!
-# if temperature > 0:
-#     print("It is warm")
-```
-
-Emulating version control:
-```python
-# somebody: threshold changed from 0 to 15 on August 5, 2013
-if temperature > 15:
-    print("It is warm")
-```
-
----
-
-# In-code documentation
-
-.left-column30[
-- Useful for those who want/need to understand and modify the code
-
-- Docstrings can be useful both for .emph[developers and users of a function]
-]
-
-.right-column60[
-```python
-def kelvin_to_celsius(temp_k: float) -> float:
-    """
-    Converts temperature in Kelvin to Celsius.
-
-    Parameters
-    ----------
-    temp_k : float
-        temperature in Kelvin
-
-    Returns
-    -------
-    temp_c : float
-        temperature in Celsius
-    """
-    assert temp_k >= 0.0, "ERROR: negative T_K"
-
-    temp_c = temp_k - 273.15
-
-    return temp_c
-
-
-print(kelvin_to_celsius.__doc__)
-```
-]
 
 ---
 
@@ -461,6 +384,17 @@ Tutorials covering key functionality.
 
 class: middle, inverse
 
+# Notebooks
+
+# &#128211;
+
+Inspiration and where to find more:
+- [Jupyter notebooks - A tool to write and share executable notebooks and data visualization](https://coderefinery.github.io/jupyter/)
+
+---
+
+class: middle, inverse
+
 # Reproducibility and containers
 
 # &#128230;
@@ -481,30 +415,6 @@ Inspiration and where to find more:
 
 ---
 
-# It all starts with a good directory structure ...
-
-```
-project_name/
-├── README.md             # overview of the project
-├── data/                 # data files used in the project
-│   ├── README.md         # describes where data came from
-│   └── sub-folder/       # may contain subdirectories
-├── processed_data/       # intermediate files from the analysis
-├── manuscript/           # manuscript describing the results
-├── results/              # results of the analysis (data, tables, figures)
-├── src/                  # contains all code in the project
-│   ├── LICENSE           # license for your code
-│   ├── requirements.txt  # software requirements and dependencies
-│   └── ...
-└── doc/                  # documentation for your project
-    ├── index.rst
-    └── ...
-```
-
-.quote[Lottery factor: If you win the lottery and leave research today, will others be able to continue your work?]
-
----
-
 class: middle, center, inverse
 
 # "it works on my machine &#129335;"
@@ -514,7 +424,7 @@ class: middle, center, inverse
 ## Recording dependencies
 
 .left-column50[
-**Conda, Anaconda, pip, virtualenv, Pipenv, pyenv, Poetry, rye, requirements.txt,
+**Conda, Anaconda, Mamba, pip, virtualenv, Pipenv, pyenv, Poetry, rye, requirements.txt,
 environment.yml, renv**, ...
 - Define dependencies
 - .emph[Communicate dependencies]
@@ -646,66 +556,6 @@ We need a way to record and .emph[communicate] computational steps
 
 class: middle, inverse
 
-# Automated testing
-
-# &#129302; &#128680; &#9989;
-
-Inspiration and where to find more:
-- [Software testing lesson material](https://coderefinery.github.io/testing/)
-
----
-
-# Technical possibilities
-
-Any programming language has tools/libraries to perform:
-
-- .emph[Unit tests]: test a function or a module and
-  compare function result to a reference
-
-- .emph[End-to-end test]: run the whole code and compare result to a reference
-
-- .emph[Coverage analysis]: Give overview of which parts of the code are tested
-
-- The test (set) can be run .emph[automatically] on [GitHub
-  Actions](https://github.com/features/actions) or [GitLab
-  CI](https://docs.gitlab.com/ee/ci/) after every Git commit
-
----
-
-# Motivation
-
-- .emph[Less scary to change code]: tests will tell you whether something broke
-
-- Unit tests can .emph[guide towards better structured code]: complicated code is more difficult to test
-
-- .emph[Easier for new people] to join
-
-- Easier for somebody to .emph[revive an old code]
-
----
-
-# Where to start
-
-- A simple script or notebook probably does not need an automated test
-- But it helps a lot if a notebook can be run self-contained
-
-
-### If you have nothing yet
-
-- Start with an end-to-end test
-- Describe in words how *you* check whether the code still works
-- Translate the words into a script
-- Run the script automatically on every code change
-
-
-### If you want to start with unit-testing
-
-- You want to rewrite a function? Start adding a unit test right there first.
-
----
-
-class: middle, inverse
-
 # Sharing and reusing
 
 # &#127803;
@@ -713,6 +563,8 @@ class: middle, inverse
 Inspiration and where to find more:
 - [UiT research software licensing guide (draft)](https://research-software.uit.no/blog/2023-software-licensing-guide/)
 - [Social coding lesson material](https://coderefinery.github.io/social-coding/) by [CodeRefinery](https://coderefinery.org/)
+- [Joinup Licensing Assistant - Find and compare software licenses](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses)
+- [Joinup Licensing Assistant - Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
 
 ---
 
@@ -849,38 +701,26 @@ date-released: 2021-08-11
 
 ---
 
-# Sharing and reusing - Great resources
+# How to share something that cannot be shared?
 
-- [UiT research software licensing guide (draft)](https://research-software.uit.no/blog/2023-software-licensing-guide/)
-
-- Guide from the Aalto University in Finland: ["Opening your Software at Aalto University"](https://www.aalto.fi/en/open-science-and-research/opening-your-software-at-aalto-university)
-
-- [Joinup Licensing Assistant - Find and compare software licenses](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses)
-
-- [Joinup Licensing Assistant - Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
-
-- [Social coding lesson material](https://coderefinery.github.io/social-coding/) by [CodeRefinery](https://coderefinery.org/)
-
-- [Citation File Format (CFF)](https://citation-file-format.github.io/)
-
-- [License Selector](https://ufal.github.io/public-license-selector/)
+(work in progress)
 
 ---
 
-# Conclusions/recommendations
+# Licensing and AI
 
-## It's about communicating!
+(work in progress)
 
-- Track your code with Git
+---
 
-- Help each other with reviewing code: great learning
+# Help and support
 
-- Documentation: start with a README in the same Git repo
-
-- Document your dependencies and computational steps
-
-- When adding tests, start with an end-to-end test
-
-- Make your code/script/notebook citable and give it a license
+- Help each other with reviewing code: .emph[great learning]
 
 - Join a [CodeRefinery](https://coderefinery.org/) workshop
+
+- [Research software engineering office hours](https://research-software.uit.no/):
+  Every Wednesday 13:00 - 15:00
+
+- [GPU team at NRIS](https://documentation.sigma2.no/getting_help/support_line.html)
+  can help with porting code to GPU or to a different GPU cluster/vendor
