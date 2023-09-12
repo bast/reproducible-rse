@@ -422,7 +422,9 @@ Galileo's drawings of Jupiter and its Medicean Stars from Sidereus Nuncius
 
 - [scikit-learn examples](https://scikit-learn.org/stable/auto_examples/index.html)
 
-- [TensorFlow 2 quickstart](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb)
+- [TensorFlow quickstart](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb)
+
+- [PyTorch quickstart](https://colab.research.google.com/github/omarsar/pytorch_notebooks/blob/master/pytorch_quick_start.ipynb)
 ]
 
 ---
@@ -442,7 +444,25 @@ Galileo's drawings of Jupiter and its Medicean Stars from Sidereus Nuncius
 
 ## Sharing notebooks
 
-(work in progress)
+.left-column40[
+- GitHub (static)
+
+- [Binder](https://mybinder.org/) (dynamic)
+
+- [Zenodo](https://zenodo.org/) (archive)
+
+- [Google Colab](https://colab.research.google.com/)
+
+- [Azure](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-run-jupyter-notebooks)
+
+- ...
+]
+
+.right-column60[
+  <img src="https://miro.medium.com/max/1050/1*xOABVY2hNtVmjV5-LXreFw.gif"
+       alt="Animation of how Binder works"
+       style="width: 100%;"/>
+]
 
 ---
 
