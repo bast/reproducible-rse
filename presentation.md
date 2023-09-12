@@ -70,26 +70,23 @@ class: center, middle, inverse
 
 ---
 
-# CodeRefinery
+<img src="img/reproducible-research.jpg"
+     alt="6 helpful steps for reproducible research: file organization, naming, documentation, version control, stabilizing computing environment, publishing cresearch outputs"
+     style="height: 550px;"/>
 
+.cite[Heidi Seibold, CC-BY 4.0, https://twitter.com/HeidiBaya/status/1579385587865649153]
+
+---
+
+.left-column40[
+<img src="img/coderefinery.png" style="width: 250px;"/>
+]
+
+.right-column60[
 **Typical format**: 6 half-days, [twice per
 year](https://coderefinery.org/workshops/upcoming/), online, free,
 live-streamed, recorded, archived asynchronous Q&A in collaborative document
-.left-column50[
-- Version control Git
-- Collaboration using GitHub
-- Testing
-- Documentation
-- Notebooks
-- Modular code development
-- Reproducible research
-- Software licensing
-- How to share and publish code
-- How to organize a code project
-- **...**
-]
 
-.right-column50[
 **Next workshop** September 19-21 and 26-28, 2023, register here: https://coderefinery.github.io/2023-09-19-workshop/
 
 **Lessons and recordings:** https://coderefinery.org/lessons/
@@ -404,14 +401,6 @@ Inspiration and where to find more:
 - [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 - [Ten simple rules for writing Dockerfiles for reproducible data science](https://doi.org/10.1371/journal.pcbi.1008316)
 - [Computing environment reproducibility](https://doi.org/10.5281/zenodo.8089471)
-
----
-
-<img src="img/reproducible-research.jpg"
-     alt="6 helpful steps for reproducible research: file organization, naming, documentation, version control, stabilizing computing environment, publishing cresearch outputs"
-     style="height: 550px;"/>
-
-.cite[Heidi Seibold, CC-BY 4.0, https://twitter.com/HeidiBaya/status/1579385587865649153]
 
 ---
 
