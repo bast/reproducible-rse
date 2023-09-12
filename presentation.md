@@ -260,7 +260,7 @@ Inspiration and where to find more:
 
 - In 3 commands from nothing to first commit:
 ```bash
-$ git init
+$ git init -b main
 $ git add myscript.py
 $ git commit
 ```
