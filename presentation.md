@@ -42,6 +42,8 @@ Text: CC-BY 4.0
 - Program that generates data
 
 - Analysis script
+
+- **Notebook doing machine learning**
 ]
 
 .right-column50[
@@ -99,20 +101,22 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 
 ---
 
-# 6 most important RSE topics?
+# RSE topics for today
 
 .left-column50[
-- Version control
+- Version control for code and data
 
-- Documentation
+- Notebooks
 
 - Reproducibility and containers
 
-- Building code with CMake (HPC-specific part)
-
-- Automated testing
+- Moving to the cloud or basement
 
 - Sharing and reusing
+
+- How to share something that cannot be shared
+
+- Help and support
 ]
 
 .right-column40[
@@ -683,6 +687,7 @@ Any programming language has tools/libraries to perform:
 # Where to start
 
 - A simple script or notebook probably does not need an automated test
+- But it helps a lot if a notebook can be run self-contained
 
 
 ### If you have nothing yet
