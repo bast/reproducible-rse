@@ -54,7 +54,8 @@ a {
 }
 
 .inverse h1,
-.inverse h2 {
+.inverse h2,
+.inverse h3 {
   color: #a3e4d7;
   line-height: 0.8em;
 }
