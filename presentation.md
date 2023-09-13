@@ -14,6 +14,30 @@ Text: CC-BY 4.0
 
 ---
 
+class: center, middle, inverse
+
+## model + data
+
+---
+
+class: center, middle, inverse
+
+## model + data
+
+# + software
+
+---
+
+class: center, middle, inverse
+
+## model + data
+
+# + software
+
+### + instruments + storage + privacy + ethics + ...
+
+---
+
 ## About me
 
 .left-column30[
@@ -43,7 +67,7 @@ Text: CC-BY 4.0
 
 - Analysis script
 
-- **Notebook doing machine learning**
+- **Notebook training/applying machine learning**
 ]
 
 .right-column50[
@@ -94,18 +118,16 @@ live-streamed, recorded, archived asynchronous Q&A in collaborative document
 
 ---
 
-## RSE topics for today
+## Topics for today
 
 .left-column50[
 - Version control for code and data
 
-- Documentation
-
-- Notebooks
+- Reusable Notebooks
 
 - Reproducibility and containers
 
-- Moving to the cloud or basement
+- Code mobility
 
 - Sharing and reusing
 
@@ -233,39 +255,6 @@ Inspiration and where to find more:
 - Main motivation for code review is the .emph[collaborative learning]
 
 - Also: better code quality
-
----
-
-.left-column50[
-### Where to start? Simple personal projects
-
-- Start with just the `main` branch
-- Later use branches for unfinished/untested ideas
-- Use tags to mark important milestones (`phd-thesis-submitted`, `published-manuscript`)
-- Better too many commits than too few
-- Better imperfect commits than no commits
-
-### Projects with few persons
-
-- Write-protect the `main` branch
-- New idea/feature: new branch
-- Use code review: changes are reviewed and discussed before they are merged
-]
-
-.right-column50[
-- [Install and configure Git](https://coderefinery.github.io/installation/)
-
-- In 3 commands from nothing to first commit:
-```bash
-$ git init -b main
-$ git add myscript.py
-$ git commit
-```
-
-- Go through [CodeRefinery](https://coderefinery.org/) lessons ([Git
-  intro](https://coderefinery.github.io/git-intro/) and [Collaborative
-  Git](https://coderefinery.github.io/git-collaborative/))
-]
 
 ---
 
@@ -517,7 +506,7 @@ Kitchen analogy
 
 ---
 
-## Reproducible notebooks
+## Reproducible notebooks/scripts
 
 .left-column60[
 ```python
@@ -529,6 +518,32 @@ from sklearn import datasets, metrics, svm
 ```
 
 - `environment.yml` and `requirements.txt` are two standard ways to describe a Python environment
+]
+
+.right-column30[
+environment.yml
+```yml
+name: myproject
+channels:
+  - defaults
+dependencies:
+  - matplotlib=3.7.2
+  - scikit-learn=1.3.0
+```
+
+requirements.txt
+```yml
+matplotlib==3.7.2
+scikit-learn==1.3.0
+```
+]
+
+---
+
+## Reproducible notebooks/scripts
+
+.left-column60[
+# Always install from these "blueprints" --->
 ]
 
 .right-column30[
@@ -610,7 +625,7 @@ Singularity), [podman](https://podman.io/)
 
 - Create a time capsule and share it on [Zenodo](https://zenodo.org/) (or similar)
 
-- Document and .emph[communicate dependencies]
+- .emph[Document and communicate dependencies]
 
 - Have a common platform to test the code
 
@@ -815,26 +830,6 @@ date-released: 2021-08-11
 
 ---
 
-## How to share something that cannot be shared?
-
-.left-column50[
-- Share small example data which demonstrates functionality
-
-- This way others can re-run it with batteries included
-
-- Example data can then be replaced with real data
-]
-
-.right-column50[
-<img src="img/brain.png"
-     alt="Lego model of a brain"
-     style="height: 250px;" />
-
-.cite[Midjourney, CC-BY-NC 4.0]
-]
-
----
-
 ## Licensing and AI - Is it data? Is it software?
 
 We need to consider the AI solution, the training data, the production data,
@@ -854,6 +849,40 @@ the AI output, and AI evolutions.
 - [RAIL initiative: "Responsible AI licenses"](https://www.licenses.ai)
 - [The Turing Way: Machine Learning Model Licenses](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-ml.html)
 - ["Expert Q&A on Artificial Intelligence (AI) Licensing"](https://www.mayerbrown.com/-/media/files/news/2019/01/expert-qanda-on-artificial-intelligence-ai-licensing-w0219801.pdf)
+
+---
+
+## How to share something that cannot be shared?
+
+.left-column50[
+- Share small example data which demonstrates functionality
+
+- This way others can re-run it with batteries included
+
+- Synthetic data can then be replaced with real data
+]
+
+.right-column50[
+<img src="img/brain.png"
+     alt="Lego model of a brain"
+     style="height: 250px;" />
+
+.cite[Midjourney, CC-BY-NC 4.0]
+]
+
+---
+
+class: middle, inverse
+
+# Small self-contained example
+
+- Is mobile
+
+- Helps new students
+
+- Helps others to help you
+
+- Publish it with your code/paper
 
 ---
 
