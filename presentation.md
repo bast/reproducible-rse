@@ -897,3 +897,5 @@ class: middle, inverse
 
 - [GPU team at NRIS](https://documentation.sigma2.no/getting_help/support_line.html)
   can help with porting to GPU or to a different GPU cluster/vendor
+
+## Slides: https://doi.org/10.5281/zenodo.8342509
