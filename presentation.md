@@ -685,7 +685,7 @@ class: middle, inverse
 
 class: middle, inverse
 
-# Sharing and reusing
+# Sharing and reusing: impact multiplier
 
 # &#127803;
 
